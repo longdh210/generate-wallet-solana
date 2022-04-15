@@ -1,0 +1,10 @@
+FROM --platform=linux/amd64 node:17-alpine3.14
+WORKDIR /home/data
+
+# Cache the node_modules folder
+ADD package*.json ./
+RUN npm install
+
+ADD . .
+
+CMD [ "node" , "./src/index.js" ]

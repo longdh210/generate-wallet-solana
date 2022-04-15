@@ -1,0 +1,23 @@
+{
+  "name": "generate-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.37.1",
+    "base58-js": "^1.0.0",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "env-cmd -f ./configs/dev.env nodemon index.js"
+  }
+}
